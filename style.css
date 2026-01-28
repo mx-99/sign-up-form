@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+    position: relative;
+    display: flex;
+}
+
+.images img{
+    position: absolute;
+    width: 800px;
+}
+
+
+.container2{
+    display: flex;
+}
