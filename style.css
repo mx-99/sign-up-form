@@ -1,21 +1,178 @@
 *{
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
-body{
+@font-face {
+    font-family: 'Kaushan';
+    src: url('font/KaushanScript-Regular.otf')  
+}
+@font-face{
+    font-family: 'norse';
+    src: url('font/norse-bold-webfont.woff');
+}
+
+.container{
     display: flex;
-    flex-direction: column;
 }
+
 .container1{
     position: relative;
-    display: flex;
-}
-
-.images img{
-    position: absolute;
     width: 800px;
+    height: 100vh;
+    background: url(images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center/cover;
 }
 
+.logo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);    
+    top: 23%;
+    width: 100%;
+    height: 19%;
+}
+
+.img-logo{
+    position: absolute;
+    left: 28%;
+    top: 6%;
+}
+.logo-text{
+    font-family: 'norse';
+    font-size: 60px;
+    position: absolute;
+    bottom: 30%;
+    left: 100%;
+    color: white;
+}
+.credit{
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    font-size: 25px;
+    color: white;
+}
+.container1 a{
+    text-decoration: none;
+    color: white;
+}
 
 .container2{
+    position: relative;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+    margin-left: 50px;
+}
+
+.upper-text{
+    position: relative;
+    top: 20%;
+    right: 28%;
+
+}
+.text{
+    font-size: large;
+    font-weight: 700;
+    margin: 5px;
+}
+.text1{
+    margin-top: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+fieldset{
+    position: absolute;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    border: none; 
+    width: 100%;
+    height: 300px;
+    padding: 5px;  
+    left: 0%;
+    right: 55%;
+    margin: 5px;
+    top: 40%;
+}
+legend{
+    font-weight: bolder;
+    font-size: larger;
+    position: absolute;
+    top: 37%;
+    left: 1%;
+}
+
+.name-container,
+.contact-container,
+.password-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-field,
+.contact-field,
+.password-field{
+    flex: 1;
+    margin: 5px;
+}
+label{
+    display: block;
+}
+input {
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+button{
+    position: absolute;
+    top: 74%;
+    left: 1%;
+    background-color:  #596D48;
+    width: 15%;
+    height: 45px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.log-in{
+    position: absolute;
+    top: 81%;
+    left: 1%;
+    font-weight: 800;
+    font-size: larger;
+}
+.log-in a{
+    text-decoration: none;
+}
+
+input:focus{
+    border: 1px solid blue; 
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); 
+}
+input[type="password"]:invalid{
+    border-color: red;
+}
+input+ span{
+    position: relative;
+}
+input:required + span::after{
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: -29px;
+    left: -70px;
+    border-radius: 10px;
+}
+
+.error{
+    color: red;
 }
