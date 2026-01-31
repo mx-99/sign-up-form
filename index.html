@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
+
 <body>
-    <div class="container1">
-        <div class="images">
-            <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="background image">
+    <div class="container">
+        <div class="container1">
+            <p class="credit">Photo by <a
+                    href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
+                    West</a> on <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+            <div class="logo">
+                <div class="img-logo">
+                    <img src="images/odin-lined.png" alt="odin logo" height="170px">
+                    <h1 class="logo-text">ODIN</h1>
+                </div>
+            </div>
         </div>
-        <div class="odin-lined">
-            <img src="images/odin-lined.png" alt="">
-        </div>
-    </div>
-    <div class="container2">
-        <div class="upper-text">
-            <p class="text">This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams.</p>                
-            <p class="text">You know you want to.</p>
-        </div>
-        <div class="form-area">
-            <form action="#" method="post">
-                <legend>Let's do this!</legend>
-                <fieldset>
-                    <p>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firts-name">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="last-name" id="lname">
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                        <label for="phonenumber">Phone Number</label>
-                        <input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </p>
-                </fieldset>
-                <button type="submit" class="btn">Create Account</button>
-            </form>
-            <p class="log-in">Already have an account? <strong><span><a href="#">Log in</a></span></strong></p>
+        <div class="container2">
+            <div class="upper-text">
+                <p class="text">This is not a real online service! You know you need something</p>
+                <p class="text">like this in your life to help you realize your deepest dreams.</p>
+                <p class="text">Sign up now to get started.</p>
+                <p class="text text1">You know you want to.</p>
+            </div>
+            <div class="form-area">
+                <form action="#" method="post">
+                    <legend>Let's do this!</legend>
+                    <fieldset>
+                        <div class="name-container">
+                            <div class="name-field">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firts-name" required>
+                                <span></span>
+                            </div>
+                            <div class="name-field">
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="last-name" id="lname" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="contact-container">
+                            <div class="contact-field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                                <span></span>
+                            </div>
+                            <div class="contact-field">
+                                <label for="phonenumber">Phone Number</label>
+                                <input type="tel" name="email" id="email" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="password-container">
+                            <div class="password-field">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                                <span></span>
+                            </div>
+                            <div class="password-field">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password" required>
+                                <span></span>
+                                <p class="error"></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn">Create Account</button>
+                    <p class="log-in">Already have an account? <strong><a href="#">Log in</a></strong></p>
+                </form>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
